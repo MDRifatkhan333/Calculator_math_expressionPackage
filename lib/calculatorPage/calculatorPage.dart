@@ -18,13 +18,14 @@ class _MyCalculatorState extends State<MyCalculator> {
   var outut = '';
   var operand = '';
   var inputSize = 40;
-  var outputSize = 50;
+  var outputSize = 40;
   //butttonValueGet
   onButtonClick(values) {
     //print(values);
     if (values == 'AC') {
       input = '';
       outut = '';
+      inputSize = 40;
     } else if (values == '<') {
       if (input.isNotEmpty) {
         input = input.substring(0, input.length - 1);
